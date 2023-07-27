@@ -1,50 +1,92 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
+import 'package:labartola/models/evento.dart';
+import 'package:labartola/services/auth_service.dart';
 import 'package:labartola/views/usuario/evento_view.dart';
 
 class EventosWidget extends StatelessWidget {
-  final int index;
-  const EventosWidget({super.key, required this.index});
+  final Evento evento;
+  const EventosWidget({super.key, required this.evento, required this.authService});
+  final AuthService authService;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       behavior: HitTestBehavior.translucent,
       onTap: (() {
+        if(authService.listaEventos[authService.listaEventos.indexWhere((element) => element.id== evento.id)].disponible){
+
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const EventoView()),
+          MaterialPageRoute(builder: (context) =>  EventoView(evento: evento)),
         );
+        }else{
+
+          final snackBar = SnackBar(
+            backgroundColor: Colors.black,
+            content: Text('Proximamente!',style: GoogleFonts.quicksand(color: Colors.white,fontSize: 20),),
+            action: SnackBarAction(
+              label: '',
+              onPressed: () {
+                // Some code to undo the change.
+              },
+            ),
+          );
+
+          // Find the ScaffoldMessenger in the widget tree
+          // and use it to show a SnackBar.
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        
+          
+        }
       }),
-      child: Column(
-        children: [
-          Container(
-              padding: const EdgeInsets.all(5),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100),
-                  border: Border.all(width: 1, color: Colors.white)),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(100),
-                child: Container(
-                  color: const Color.fromRGBO(38, 25, 35, 1),
-                  width: 100,
-                  height: 100,
-                  child: Image(
-                    image: NetworkImage(index == 1
-                        ? 'https://scontent.fagu2-1.fna.fbcdn.net/v/t39.30808-6/326225016_1632429903841482_1732220859570176532_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEGQYvQq2z_b0UCo_OoKFTSN3eFNjahUrk3d4U2NqFSuVk9eOToE-jA4YOxgXQlRp3fKjMLKbmZlAAwttSbKxWP&_nc_ohc=bJRMmoA4Mw8AX-fn_SD&_nc_ht=scontent.fagu2-1.fna&oh=00_AfBFsv4F1mZ3wjN4HIq3Sjan0ooxE6OUh-lAdQpkKoPSTg&oe=641F27D3'
-                        : 'https://scontent.fagu2-1.fna.fbcdn.net/v/t39.30808-6/334933149_911804583474372_7300728421868418012_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEZaRVI_16fXMOws7AEJQRwWOlC88jUHWtY6ULzyNQda59R7jDgd8BtjQw2LLpMT4vLu77sCcXd98FA7TVt7yWN&_nc_ohc=ajTHNiApgjsAX_TV2Cx&_nc_ht=scontent.fagu2-1.fna&oh=00_AfAu9LiXGnSabvhS1sm84KRWBWh6eehXTWKA-JZOVxywmg&oe=641DA290'),
-                    fit: BoxFit.cover,
-                  ),
+      child: Opacity(
+        opacity: authService.listaEventos[authService.listaEventos.indexWhere((element) => element.id== evento.id)].disponible ? 1: .2,
+        child: Hero(
+          tag: evento.id,
+          child: Stack(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(
+                  5
                 ),
-              )),
-          const SizedBox(
-            height: 10,
-          ),
-          Text(
-            index == 0 ? '25/03/2023' : '03/05/2023',
-            style: GoogleFonts.quicksand(color: Colors.white),
+                decoration: BoxDecoration(
+                   boxShadow: [
+          BoxShadow(
+            color: Colors.white.withOpacity(.05),
+            blurRadius: 3.0, // soften the shadow
+            spreadRadius: 1.0, //extend the shadow
+            offset: const Offset(
+              0, // Move to right 5  horizontally
+              0, // Move to bottom 5 Vertically
+            ),
           )
-        ],
+            ],
+                  borderRadius: BorderRadius.circular(15),border: Border.all(width: 1,color: Colors.white.withOpacity(.1))
+                ),
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 25,vertical: 20),
+                  decoration: BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.circular(15)
+                  ),
+                  child: Column(
+                    children: [
+                      Text(DateFormat.MMMM("es-MX").format(evento.fechaInicio.toLocal()).toUpperCase() ,style: GoogleFonts.quicksand(color: Colors.grey),),
+                      const SizedBox(height: 10,),
+                      Text(evento.fechaInicio.toLocal().day.toString(),style: GoogleFonts.quicksand(color: Colors.white,fontSize: 30),),
+                    const SizedBox(height: 10,),
+                      Text(DateFormat.E("es-MX").format(evento.fechaInicio.toLocal()).toUpperCase(),style: GoogleFonts.quicksand(color: Colors.grey),),
+              
+                    ],
+                  )
+                ),
+              ),
+               Positioned(top: -5,left: -5,child: Icon(Icons.bookmark,size: 35,color: authService.revisarMesa(evento: evento.id) ? Colors.yellow : Colors.transparent))
+            ],
+          ),
+        ),
       ),
     );
   }

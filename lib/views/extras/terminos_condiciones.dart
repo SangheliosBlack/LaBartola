@@ -7,8 +7,10 @@ class TerminosCondicionesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      
       child: Scaffold(
-        backgroundColor: Colors.white,
+        appBar: AppBar(backgroundColor: Colors.black,),
+        backgroundColor: const Color.fromRGBO(47, 46, 48, .5),
         body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 35),
           child: SingleChildScrollView(
@@ -24,30 +26,30 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   'Politica de privacidad',
                   style: GoogleFonts.quicksand(
-                      fontSize: 25, color: Colors.black.withOpacity(.8)),
+                      fontSize: 25, color: Colors.white),
                 ),
                 const SizedBox(height: 15),
                 Text(
                   'Actualizado el 2022-02-11',
                   style: GoogleFonts.quicksand(
-                      fontSize: 17, color: Colors.black.withOpacity(.8)),
+                      fontSize: 17, color: Colors.white),
                 ),
                 const SizedBox(height: 50),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       TextSpan(
-                          text: 'Loops ',
+                          text: 'Mor ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
                           text:
                               '("nosotros", "nuestro" o "nos") se compromete a proteger su privacidad. Esta Política de privacidad explica cómo '),
                       TextSpan(
-                          text: 'Loops',
+                          text: 'Mor',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -61,13 +63,13 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       const TextSpan(
                           text:
                               'Esta Política de privacidad se aplica a nuestro sitio web, y sus subdominios asociados (colectivamente, nuestro "Servicio") junto con nuestra aplicación, '),
                       TextSpan(
-                          text: 'Loops. ',
+                          text: 'Mor. ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -80,14 +82,14 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   'Definiciones y Términos clave',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -106,7 +108,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -129,13 +131,13 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(
                                   text:
                                       'Compañía: cuando esta política menciona "Compañía", "nosotros", "nos" o "nuestro", se refiere a '),
                               TextSpan(
-                                  text: 'Loops ',
+                                  text: 'Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -160,13 +162,13 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(
                                   text:
                                       'Plataforma: sitio web de Internet, aplicación web o aplicación digital de cara al público de '),
                               TextSpan(
-                                  text: 'Loops.',
+                                  text: 'Mor.',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -188,17 +190,17 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(text: 'País: donde se encuentran'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
                               const TextSpan(
                                   text:
-                                      ' o los propietarios / fundadores de Loops, en este caso es Mexico'),
+                                      ' o los propietarios / fundadores de Mor, en este caso es Mexico'),
                             ],
                           ),
                         ),
@@ -217,13 +219,13 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(
                                   text:
                                       'Cliente: se refiere a la empresa, organización o persona que se registra para utilizar el Servicio'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -248,13 +250,13 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(
                                   text:
                                       'Dispositivo: cualquier dispositivo conectado a Internet, como un teléfono, tablet, computadora o cualquier otro dispositivo que se pueda usar para visitar'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -277,7 +279,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -300,13 +302,13 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(
                                   text:
                                       'Personal: se refiere a aquellas personas que son empleadas por'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -331,7 +333,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -354,13 +356,13 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(
                                   text:
                                       'Servicio: se refiere al servicio brindado por'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -385,7 +387,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -408,11 +410,11 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(text: 'Sitio web: el sitio de'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -437,13 +439,13 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(
                                   text:
                                       'Usted: una persona o entidad que está registrada con'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -460,14 +462,14 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Qué información recopilamos?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -486,7 +488,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(text: 'Nombre / nombre de usuario'),
                             ],
@@ -507,7 +509,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(text: 'Números de teléfono'),
                             ],
@@ -528,7 +530,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(text: 'Correos electrónicos'),
                             ],
@@ -549,7 +551,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(text: 'Direcciones de facturación'),
                             ],
@@ -570,7 +572,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -593,7 +595,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(text: 'Contraseña'),
                             ],
@@ -610,7 +612,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -629,7 +631,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -643,9 +645,9 @@ class TerminosCondicionesView extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Text(
-                  '¿Cuándo usa Loops la información del usuario final de terceros?',
+                  '¿Cuándo usa Mor la información del usuario final de terceros?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 Container(
@@ -659,10 +661,10 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               TextSpan(
-                                  text: 'Loops ',
+                                  text: 'Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -670,7 +672,7 @@ class TerminosCondicionesView extends StatelessWidget {
                                   text:
                                       'recopilará los datos del usuario final necesarios para proporcionar los servicios de'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -686,9 +688,9 @@ class TerminosCondicionesView extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Text(
-                  '¿Cuándo usa Loops la información del cliente de terceros?',
+                  '¿Cuándo usa Mor la información del cliente de terceros?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 Container(
@@ -702,13 +704,13 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               const TextSpan(
                                   text:
                                       'Recibimos información de terceros cuando se comunica con nosotros. Por ejemplo, cuando nos envía su dirección de correo electrónico para mostrar interés en convertirse en cliente de'),
                               TextSpan(
-                                  text: ' Loops ',
+                                  text: ' Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -716,7 +718,7 @@ class TerminosCondicionesView extends StatelessWidget {
                                   text:
                                       ', recibimos información de un tercero que brinda servicios automáticos de detección de fraude a '),
                               TextSpan(
-                                  text: ' Loops. ',
+                                  text: ' Mor. ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -734,14 +736,14 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Compartimos la información que recopilamos con terceros?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -754,7 +756,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -767,7 +769,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -780,7 +782,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -792,7 +794,7 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Dónde y cuándo se recopila la información de los clientes y usuarios finales?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 Container(
@@ -806,10 +808,10 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: <TextSpan>[
                               TextSpan(
-                                  text: 'Loops ',
+                                  text: 'Mor ',
                                   style: GoogleFonts.quicksand(
                                       fontWeight: FontWeight.bold,
                                       color: Colors.blue)),
@@ -827,14 +829,14 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Cómo usamos la información que recopilamos?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -853,7 +855,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -876,7 +878,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -899,7 +901,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -922,7 +924,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(text: 'Para procesar transacciones'),
                             ],
@@ -943,7 +945,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -966,7 +968,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -982,14 +984,14 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Cómo utilizamos su dirección de correo electrónico?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1001,20 +1003,20 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Cuánto tiempo conservamos su información?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       const TextSpan(
                           text:
                               'Conservamos su información solo mientras la necesitemos para proporcionarle'),
                       TextSpan(
-                          text: ' Loops ',
+                          text: ' Mor ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -1027,18 +1029,18 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Cómo protegemos su información?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
-                              'Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal cuando realiza un pedido, ingresa, envía o accede a su información personal. Ofrecemos el uso de un servidor seguro. Toda la información confidencial / crediticia suministrada se transmite a través de la tecnología Secure Socket Layer (SSL) y luego se encripta en nuestra base de datos de proveedores de pasarela de pago solo para que sea accesible por aquellos autorizados con derechos especiales de acceso a dichos sistemas, y deben mantener la información confidencial. Después de una transacción, su información privada (tarjetas de crédito, números de seguro social, finanzas, etc.) nunca se archiva. Sin embargo, no podemos garantizar la seguridad absoluta de la información que transmita a Loops ni garantizar que su información en el servicio no sea accedida, divulgada, alterada o destruida por una infracción de cualquiera de nuestras condiciones físicas, salvaguardias técnicas o de gestión.'),
+                              'Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal cuando realiza un pedido, ingresa, envía o accede a su información personal. Ofrecemos el uso de un servidor seguro. Toda la información confidencial / crediticia suministrada se transmite a través de la tecnología Secure Socket Layer (SSL) y luego se encripta en nuestra base de datos de proveedores de pasarela de pago solo para que sea accesible por aquellos autorizados con derechos especiales de acceso a dichos sistemas, y deben mantener la información confidencial. Después de una transacción, su información privada (tarjetas de crédito, números de seguro social, finanzas, etc.) nunca se archiva. Sin embargo, no podemos garantizar la seguridad absoluta de la información que transmita a Mor ni garantizar que su información en el servicio no sea accedida, divulgada, alterada o destruida por una infracción de cualquiera de nuestras condiciones físicas, salvaguardias técnicas o de gestión.'),
                     ],
                   ),
                 ),
@@ -1046,17 +1048,17 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Podría transferirse mi información a otros países?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       TextSpan(
-                          text: ' Loops ',
+                          text: ' Mor ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -1067,16 +1069,16 @@ class TerminosCondicionesView extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Text(
-                  '¿La información recopilada a través del Servicio Loops es segura?',
+                  '¿La información recopilada a través del Servicio Mor es segura?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1088,25 +1090,25 @@ class TerminosCondicionesView extends StatelessWidget {
                 Text(
                   '¿Puedo actualizar o corregir mi información?',
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       const TextSpan(
                           text:
                               'Los derechos que tienes para solicitar actualizaciones o correcciones de la información que recopila'),
                       TextSpan(
-                          text: ' Loops ',
+                          text: ' Mor ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(text: ' dependen de tu relación con '),
                       TextSpan(
-                          text: ' Loops.',
+                          text: ' Mor.',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -1122,7 +1124,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1137,7 +1139,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1152,7 +1154,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1167,7 +1169,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Personal',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1176,11 +1178,11 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       const TextSpan(text: 'Si es un trabajador o solicitante de'),
                       TextSpan(
-                          text: ' Loops, ',
+                          text: ' Mor, ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -1196,7 +1198,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1211,7 +1213,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Venta de Negocio',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1220,18 +1222,18 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       const TextSpan(
                           text:
                               'Nos reservamos el derecho de transferir información a un tercero en el caso de una venta, fusión u otra transferencia de todos o sustancialmente todos los activos de'),
                       TextSpan(
-                          text: ' Loops  ',
+                          text: ' Mor  ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
                           text:
-                              'o cualquiera de sus afiliadas corporativas (como se define en este documento), o la porción de Loops o cualquiera de sus Afiliadas corporativas con las que se relaciona el Servicio, o en el caso de que discontinuemos nuestro negocio o presentemos una petición o hayamos presentado una petición contra nosotros en caso de quiebra, reorganización o procedimiento similar, siempre que el el tercero acepte adherirse a los términos de esta Política de privacidad.'),
+                              'o cualquiera de sus afiliadas corporativas (como se define en este documento), o la porción de Mor o cualquiera de sus Afiliadas corporativas con las que se relaciona el Servicio, o en el caso de que discontinuemos nuestro negocio o presentemos una petición o hayamos presentado una petición contra nosotros en caso de quiebra, reorganización o procedimiento similar, siempre que el el tercero acepte adherirse a los términos de esta Política de privacidad.'),
                     ],
                   ),
                 ),
@@ -1242,7 +1244,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Afiliados',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1251,13 +1253,13 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       const TextSpan(
                           text:
                               'Podemos divulgar información (incluida la información personal) sobre usted a nuestros afiliados corporativos. Para los propósitos de esta Política de Privacidad, "Afiliado Corporativo" significa cualquier persona o entidad que directa o indirectamente controla, está controlada por o está bajo control común con'),
                       TextSpan(
-                          text: ' Loops  ',
+                          text: ' Mor  ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -1273,7 +1275,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Ley que Rige',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1282,7 +1284,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1295,7 +1297,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1308,11 +1310,11 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       const TextSpan(text: 'Al usar'),
                       TextSpan(
-                          text: ' Loops ',
+                          text: ' Mor ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -1328,7 +1330,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Tu consentimiento',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1337,7 +1339,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1352,7 +1354,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Enlaces a otros Sitios Web',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1361,11 +1363,11 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
-                              'Esta Política de privacidad se aplica solo a los Servicios. Los Servicios pueden contener enlaces a otros sitios web que Loops no opera ni controla. No somos responsables por el contenido, la precisión o las opiniones expresadas en dichos sitios web, y dichos sitios web no son investigados, monitoreados o verificados por nuestra precisión o integridad. Recuerde que cuando utiliza un enlace para ir desde los Servicios a otro sitio web, nuestra Política de privacidad deja de estar en vigor. Su navegación e interacción en cualquier otro sitio web, incluidos aquellos que tienen un enlace en nuestra plataforma, están sujetos a las propias reglas y políticas de ese sitio web. Dichos terceros pueden utilizar sus propias cookies u otros métodos para recopilar información sobre usted.'),
+                              'Esta Política de privacidad se aplica solo a los Servicios. Los Servicios pueden contener enlaces a otros sitios web que Mor no opera ni controla. No somos responsables por el contenido, la precisión o las opiniones expresadas en dichos sitios web, y dichos sitios web no son investigados, monitoreados o verificados por nuestra precisión o integridad. Recuerde que cuando utiliza un enlace para ir desde los Servicios a otro sitio web, nuestra Política de privacidad deja de estar en vigor. Su navegación e interacción en cualquier otro sitio web, incluidos aquellos que tienen un enlace en nuestra plataforma, están sujetos a las propias reglas y políticas de ese sitio web. Dichos terceros pueden utilizar sus propias cookies u otros métodos para recopilar información sobre usted.'),
                     ],
                   ),
                 ),
@@ -1376,7 +1378,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Cookies',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1385,10 +1387,10 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       TextSpan(
-                          text: 'Loops ',
+                          text: 'Mor ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
@@ -1402,14 +1404,14 @@ class TerminosCondicionesView extends StatelessWidget {
                   'Bloquear y deshabilitar Cookies y tecnologías similares',
                   textAlign: TextAlign.left,
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1424,7 +1426,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Detalles del Pago',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1433,7 +1435,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1448,7 +1450,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Privacidad de los Niños',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1457,7 +1459,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1470,14 +1472,14 @@ class TerminosCondicionesView extends StatelessWidget {
                   'Cambios en nuestra Política de Privacidad',
                   textAlign: TextAlign.left,
                   style: GoogleFonts.quicksand(
-                      fontSize: 22, color: Colors.black.withOpacity(.8)),
+                      fontSize: 22, color: Colors.white),
                 ),
                 const SizedBox(height: 20),
                 RichText(
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1492,7 +1494,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Servicio de terceros',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1501,7 +1503,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1514,16 +1516,16 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: <TextSpan>[
                       const TextSpan(text: 'Usted reconoce y acepta que'),
                       TextSpan(
-                          text: ' Loops ',
+                          text: ' Mor ',
                           style: GoogleFonts.quicksand(
                               fontWeight: FontWeight.bold, color: Colors.blue)),
                       const TextSpan(
                           text:
-                              'no será responsable de ningún Servicio de terceros, incluida su precisión, integridad, puntualidad, validez, cumplimiento de los derechos de autor, legalidad, decencia, calidad o cualquier otro aspecto de los mismos. Loops no asume ni tendrá ninguna obligación o responsabilidad ante usted o cualquier otra persona o entidad por los Servicios de terceros.'),
+                              'no será responsable de ningún Servicio de terceros, incluida su precisión, integridad, puntualidad, validez, cumplimiento de los derechos de autor, legalidad, decencia, calidad o cualquier otro aspecto de los mismos. Mor no asume ni tendrá ninguna obligación o responsabilidad ante usted o cualquier otra persona o entidad por los Servicios de terceros.'),
                     ],
                   ),
                 ),
@@ -1534,7 +1536,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Tecnologias de Seguimiento',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1543,7 +1545,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1562,7 +1564,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(text: 'API de Google Maps'),
                             ],
@@ -1582,7 +1584,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -1604,7 +1606,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -1626,7 +1628,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -1649,7 +1651,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(text: 'Almacenamiento Local'),
                             ],
@@ -1669,7 +1671,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -1688,7 +1690,7 @@ class TerminosCondicionesView extends StatelessWidget {
                       'Contactenos',
                       textAlign: TextAlign.left,
                       style: GoogleFonts.quicksand(
-                          fontSize: 22, color: Colors.black.withOpacity(.8)),
+                          fontSize: 22, color: Colors.white),
                     ),
                   ],
                 ),
@@ -1697,7 +1699,7 @@ class TerminosCondicionesView extends StatelessWidget {
                   text: TextSpan(
                     text: '',
                     style: GoogleFonts.quicksand(
-                        color: Colors.black.withOpacity(.8)),
+                        color: Colors.white),
                     children: const <TextSpan>[
                       TextSpan(
                           text:
@@ -1716,7 +1718,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -1739,7 +1741,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:
@@ -1762,7 +1764,7 @@ class TerminosCondicionesView extends StatelessWidget {
                           text: TextSpan(
                             text: '',
                             style: GoogleFonts.quicksand(
-                                color: Colors.black.withOpacity(.8)),
+                                color: Colors.white),
                             children: const <TextSpan>[
                               TextSpan(
                                   text:

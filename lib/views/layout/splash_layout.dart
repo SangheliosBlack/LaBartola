@@ -11,7 +11,7 @@ class SplashLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.grey,
       body: SafeArea(
         child: FutureBuilder(
             future: checkLoginState(context),
@@ -19,24 +19,46 @@ class SplashLayout extends StatelessWidget {
               return Container(
                   width: width,
                   decoration: const BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage('assets/images/fondo.jpg'),
-                        fit: BoxFit.cover),
+                    
                   ),
                   child: Column(
-                    children: [
-                      const Expanded(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(5),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(150),
+                    border: Border.all(
+                        width: 1, color: const Color.fromRGBO(47, 46, 48, .1))),
+                child: Container(
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(150),
+                      border: Border.all(
+                          width: 2, color: const Color.fromRGBO(47, 46, 48, .5))),
+                  child: Container(
+                    padding: const EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(150),
+                        border: Border.all(
+                            width: 3, color: const Color.fromRGBO(47, 46, 48, 1))),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(150),
+                      child: const SizedBox(
+                          height: 250,
+                          width: 250,
                           child: Image(
-                              image: AssetImage('assets/images/logo.png'))),
-                      Container(
-                        margin: const EdgeInsets.only(bottom: 35),
-                        child: const CircularProgressIndicator(
-                          backgroundColor: Color.fromRGBO(108, 2, 93, 1),
-                          color: Colors.white,
-                        ),
-                      ),
-                    ],
-                  ));
+                            image: AssetImage('assets/images/mor.jpeg'),
+                            fit: BoxFit.cover,
+                          )),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+                  );
             }),
       ),
     );

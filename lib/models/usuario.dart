@@ -1,8 +1,11 @@
 import 'dart:convert';
 
+import 'package:labartola/models/amigo.dart';
 import 'package:labartola/models/cesta.dart';
 import 'package:labartola/models/tienda.dart';
 
+
+List<Usuario> usuariosFromJson(String str) => List<Usuario>.from(json.decode(str).map((x) => Usuario.fromJson(x)));
 
 Usuario usuarioFromJson(String str) => Usuario.fromJson(json.decode(str));
 
@@ -30,10 +33,12 @@ class Usuario {
       this.fix,
       required this.onlineRepartidor,
       required this.transito,
+      required this.amigos,
       required this.cesta});
   bool online;
   List<dynamic> direcciones;
   String correo;
+  List<Amigo> amigos;
   String nombreUsuario;
   String nombre;
   String codigo;
@@ -57,6 +62,7 @@ class Usuario {
 
   factory Usuario.fromJson(Map<String, dynamic> json) {
     return Usuario(
+        amigos: List<Amigo>.from(json["amigos"].map((x) => Amigo.fromJson(x))),
         onlineRepartidor: json['online_repartidor'],
         online: json["online"],
         dialCode: json["dialCode"],

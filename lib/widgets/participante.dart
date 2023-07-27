@@ -12,8 +12,7 @@ class Participante extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-              builder: (context) => ParticipanteView(
-                    index: index,
+              builder: (context) => const ParticipanteView(
                   )),
         );
       },
@@ -25,12 +24,12 @@ class Participante extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
                 border: Border.all(width: 1, color: Colors.white)),
-            child: Container(
+            child: SizedBox(
               width: 70,
               height: 70,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(100),
-                child: Image(
+                child: const Image(
                   image: NetworkImage(
                       'https://scontent.fagu2-1.fna.fbcdn.net/v/t39.30808-6/304850340_5497225080343195_4848020560504729708_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHWfEJEK28N4jDHU4kGV5xl9WTZfw5EfXn1ZNl_DkR9eaQnx604MsJ8DeVaJLztB5vO09VZ_7KPGa-u7CHiNH3I&_nc_ohc=9c0wZMpXZCkAX9q7oVq&_nc_ht=scontent.fagu2-1.fna&oh=00_AfAawUHkAZbjKLA_73dztqXEklS4HZj3ukDWlDspdqVgTw&oe=641EC7CF'),
                   fit: BoxFit.cover,

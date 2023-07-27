@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:labartola/models/producto.dart';
 
 class Statics {
-  static String apiUrl = 'http://192.168.0.7:3000/api';
+  static String apiUrl = 'https://server-delivery-production.herokuapp.com/api';
 
   static Map<int, Color> color = {
     50: const Color.fromRGBO(255, 255, 255, .1),

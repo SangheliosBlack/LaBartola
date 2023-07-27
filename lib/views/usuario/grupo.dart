@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'dart:math';
 
 import 'package:bubble_chart/bubble_chart.dart';
@@ -30,7 +32,7 @@ class _GrupoViewState extends State<GrupoView> {
         BubbleNode node = BubbleNode.leaf(
           value: max(1, random.nextInt(50)),
           options: BubbleOptions(
-            child: Image(
+            child: const Image(
                 image: NetworkImage(
                     'https://scontent.fagu2-1.fna.fbcdn.net/v/t39.30808-6/329349825_581028793575102_6527898272697218778_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF5Lv2e6P-OKvAljp2WXNO4rQ_LRxEZP12tD8tHERk_XYLJi_zZ6HEJRdLv_MFHfcnONJAhqeXDYmo0d329EznM&_nc_ohc=VTPXrD_SKCcAX_DNrq_&_nc_ht=scontent.fagu2-1.fna&oh=00_AfAljy23UfDVzeqj8fdzcieSt_o31fM4dw3VviNPjLwUJA&oe=641E2143')),
             color: () {
@@ -54,7 +56,7 @@ class _GrupoViewState extends State<GrupoView> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.transparent,
-      body: Container(
+      body: SizedBox(
         height: 1000,
         child: BubbleChartLayout(
           padding: 10,
@@ -65,7 +67,7 @@ class _GrupoViewState extends State<GrupoView> {
               options: BubbleOptions(color: Colors.red),
             ),
           ],
-          duration: Duration(milliseconds: 500),
+          duration: const Duration(milliseconds: 500),
         ),
       ),
     );

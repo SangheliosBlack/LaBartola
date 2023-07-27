@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -24,41 +26,39 @@ class _AutentificarCelularState extends State<AutentificarCelular> {
     var number = PhoneNumber(isoCode: 'MX', dialCode: '+52', phoneNumber: '');
 
     final putoDial = Provider.of<Dial>(context);
-    final double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.transparent,
       resizeToAvoidBottomInset: true,
       body: ListView(
-        padding: EdgeInsets.only(top: 25),
+        padding: const EdgeInsets.only(top: 25),
         children: [
           Column(
             children: [
               Container(
-                padding: EdgeInsets.all(5),
+                padding: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(150),
                     border: Border.all(
-                        width: 1, color: Color.fromRGBO(47, 46, 48, .1))),
+                        width: 1, color: const Color.fromRGBO(47, 46, 48, .1))),
                 child: Container(
-                  padding: EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(150),
                       border: Border.all(
-                          width: 2, color: Color.fromRGBO(47, 46, 48, .5))),
+                          width: 2, color: const Color.fromRGBO(47, 46, 48, .5))),
                   child: Container(
-                    padding: EdgeInsets.all(5),
+                    padding: const EdgeInsets.all(5),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(150),
                         border: Border.all(
-                            width: 3, color: Color.fromRGBO(47, 46, 48, 1))),
+                            width: 3, color: const Color.fromRGBO(47, 46, 48, 1))),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(150),
-                      child: Container(
+                      child: const SizedBox(
                           height: 250,
                           width: 250,
-                          child: const Image(
-                            image: AssetImage('assets/images/bartola.jpg'),
+                          child: Image(
+                            image: AssetImage('assets/images/mor.jpeg'),
                             fit: BoxFit.cover,
                           )),
                     ),
@@ -67,7 +67,7 @@ class _AutentificarCelularState extends State<AutentificarCelular> {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
@@ -92,13 +92,13 @@ class _AutentificarCelularState extends State<AutentificarCelular> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 border:
-                    Border.all(width: 1, color: Color.fromRGBO(47, 46, 48, 1))),
+                    Border.all(width: 1, color: const Color.fromRGBO(47, 46, 48, 1))),
             child: Container(
               margin: const EdgeInsets.only(top: 0),
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
-                color: Color.fromRGBO(47, 46, 48, 1),
+                color: const Color.fromRGBO(47, 46, 48, 1),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,20 +163,10 @@ class _AutentificarCelularState extends State<AutentificarCelular> {
             height: 15,
           ),
           BotonAutentificar(formKey: formKey, controller: controller),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          Container(
-            margin: EdgeInsets.symmetric(horizontal: 25),
-            padding: EdgeInsets.symmetric(horizontal: 25, vertical: 13),
-            decoration: BoxDecoration(
-                color: Color.fromRGBO(54, 83, 146, 1),
-                borderRadius: BorderRadius.circular(25)),
-            child: Icon(
-              Icons.facebook,
-              color: Colors.white,
-            ),
-          )
+          
         ],
       ),
     );
@@ -261,7 +251,7 @@ class _BotonAutentificarState extends State<BotonAutentificar> {
               alignment: Alignment.center,
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 0),
               decoration: BoxDecoration(
-                  color: Color.fromRGBO(47, 46, 48, 1),
+                  color: const Color.fromRGBO(47, 46, 48, 1),
                   borderRadius: send
                       ? BorderRadius.circular(100)
                       : BorderRadius.circular(25)),

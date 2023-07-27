@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:labartola/provider/register_form_provider.dart';
 import 'package:labartola/routes/router.dart';
 import 'package:labartola/services/auth_service.dart';
@@ -50,6 +51,12 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       navigatorKey: navigationService.navigatorKey,
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: const [Locale('es')],
       initialRoute: Flurorouter.rootRoute,
       theme: ThemeData(
         primarySwatch: Colors.blue,

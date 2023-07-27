@@ -30,7 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_localizations:
+    sdk: flutter
 
   pretty_qr_code: ^2.0.3
   google_fonts: ^4.0.1
@@ -52,6 +53,13 @@ dependencies:
   camera: ^0.10.3+2
   metaballs: ^1.5.0
   bubble_chart: ^0.4.0
+  intl: ^0.18.0
+  smooth_page_indicator: ^1.0.1
+  vector_math: any
+  marquee: ^2.2.3
+  flutter_svg: ^2.0.4
+  dotted_border: ^2.0.0+3
+  pdfx: ^2.4.0
 
 dev_dependencies:
   flutter_test:

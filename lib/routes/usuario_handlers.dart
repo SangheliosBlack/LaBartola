@@ -9,7 +9,7 @@ class UsuarioHanlder {
     final authService = Provider.of<AuthService>(context!);
 
     if (authService.authStatus == AuthStatus.notAuthenticated) {
-      return const DashboardUsuarioView();
+      return const AutentificarCelular();
     } else {
       return const DashboardUsuarioView();
     }

@@ -69,7 +69,7 @@ class _ConfirmarCodigoState extends State<ConfirmarCodigo> with CodeAutoFill {
     return WillPopScope(
       onWillPop: () async => isDone,
       child: Scaffold(
-        backgroundColor: const Color.fromRGBO(108, 2, 93, 1),
+        backgroundColor: const Color.fromRGBO(47, 46, 48, .5),
         body: ListView(
           physics: const BouncingScrollPhysics(),
           shrinkWrap: true,
@@ -95,10 +95,10 @@ class _ConfirmarCodigoState extends State<ConfirmarCodigo> with CodeAutoFill {
                                   borderRadius: BorderRadius.circular(100),
                                   border: Border.all(
                                       width: 1,
-                                      color: const Color.fromRGBO(244, 27, 91, 1))),
+                                      color:  Colors.black)),
                               child: const Icon(
                                 Icons.arrow_back_ios_rounded,
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                             ),
                             const SizedBox(width: 8),
@@ -129,7 +129,7 @@ class _ConfirmarCodigoState extends State<ConfirmarCodigo> with CodeAutoFill {
                 Text(
                   'Codigo enviado al numero',
                   style: GoogleFonts.quicksand(
-                      color: const Color.fromRGBO(250, 180, 4, 1), fontSize: 22),
+                      color:  Colors.white, fontSize: 22),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 10),
@@ -140,7 +140,7 @@ class _ConfirmarCodigoState extends State<ConfirmarCodigo> with CodeAutoFill {
                     Text(
                       '${widget.codigo}  ',
                       style: GoogleFonts.quicksand(
-                        color: const Color.fromRGBO(244, 27, 91, 1),
+                        color:  Colors.white,
                         fontSize: 22,
                       ),
                       textAlign: TextAlign.center,
@@ -170,12 +170,12 @@ class _ConfirmarCodigoState extends State<ConfirmarCodigo> with CodeAutoFill {
                     lineHeight: 1,
                     lineStrokeCap: StrokeCap.square,
                     bgColorBuilder:
-                        const FixedColorBuilder(Color.fromRGBO(244, 27, 91, 1)),
+                        const FixedColorBuilder(Colors.black),
                     hintText: '0000',
                     hintTextStyle: GoogleFonts.quicksand(
                         color: Colors.white.withOpacity(1), fontSize: 30),
                     colorBuilder:
-                        const FixedColorBuilder(Color.fromRGBO(250, 180, 4, 1)),
+                        const FixedColorBuilder(Colors.black),
                     textStyle: GoogleFonts.quicksand(
                         color: Colors.white, fontSize: 30)),
                 onCodeSubmitted: (valor) {},
@@ -203,7 +203,7 @@ class _ConfirmarCodigoState extends State<ConfirmarCodigo> with CodeAutoFill {
                       },
                       fade: false,
                       decoration: const BoxDecoration(
-                          color: Color.fromRGBO(244, 27, 91, 1)),
+                          color: Colors.black),
                       duration: const Duration(minutes: 10),
                       textStyle: GoogleFonts.quicksand(
                           color: Colors.white,
@@ -254,7 +254,7 @@ class _ConfirmarCodigoState extends State<ConfirmarCodigo> with CodeAutoFill {
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1,
-                                color: const Color.fromRGBO(244, 27, 91, 1)),
+                                color: Colors.black),
                             borderRadius: send
                                 ? BorderRadius.circular(100)
                                 : BorderRadius.circular(25)),
